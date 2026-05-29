@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "dev:frontend": "npm --prefix frontend run dev",
-    "build": "tsc && npm --prefix frontend run build",
+    "build": "npm --prefix frontend install && tsc && npm --prefix frontend run build",
     "build:backend": "tsc",
     "build:frontend": "npm --prefix frontend run build",
     "start": "node dist/server.js",
